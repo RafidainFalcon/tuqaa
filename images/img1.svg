@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b0b3a"/>
+      <stop offset="45%" stop-color="#7a0f4d"/>
+      <stop offset="100%" stop-color="#ff1b6b"/>
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#ff8fb1" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ff1b6b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2e88"/>
+      <stop offset="100%" stop-color="#ff8fb1"/>
+    </linearGradient>
+    <filter id="blur14" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="blur6" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <path id="heartShape" d="M50 88 L16.7 55.6 C7.2 46.1 7.2 30.9 16.7 21.4 C26.2 11.9 41.4 11.9 50.9 21.4 L50 22.3 L49.1 21.4 C58.6 11.9 73.8 11.9 83.3 21.4 C92.8 30.9 92.8 46.1 83.3 55.6 Z"/>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg1)"/>
+  <rect width="800" height="600" fill="url(#centerGlow)"/>
+
+  <!-- Sparkles -->
+  <g fill="#fff">
+    <circle cx="90" cy="80" r="3" opacity="0.9"/>
+    <circle cx="170" cy="160" r="2" opacity="0.6"/>
+    <circle cx="700" cy="110" r="3" opacity="0.8"/>
+    <circle cx="620" cy="200" r="2" opacity="0.5"/>
+    <circle cx="330" cy="70" r="2.5" opacity="0.7"/>
+    <circle cx="480" cy="120" r="2" opacity="0.55"/>
+    <circle cx="120" cy="430" r="2.5" opacity="0.7"/>
+    <circle cx="720" cy="470" r="3" opacity="0.75"/>
+    <circle cx="560" cy="530" r="2" opacity="0.5"/>
+    <circle cx="250" cy="520" r="2.5" opacity="0.65"/>
+  </g>
+
+  <!-- Scattered small hearts -->
+  <g fill="#ffffff">
+    <g transform="translate(70,180) scale(0.45) rotate(-15)"><use href="#heartShape" xlink:href="#heartShape" opacity="0.35"/></g>
+    <g transform="translate(620,80) scale(0.6) rotate(12)"><use href="#heartShape" xlink:href="#heartShape" opacity="0.3"/></g>
+    <g transform="translate(690,300) scale(0.4) rotate(-8)"><use href="#heartShape" xlink:href="#heartShape" opacity="0.4"/></g>
+    <g transform="translate(140,320) scale(0.55) rotate(18)"><use href="#heartShape" xlink:href="#heartShape" opacity="0.3"/></g>
+    <g transform="translate(240,70) scale(0.35) rotate(6)"><use href="#heartShape" xlink:href="#heartShape" opacity="0.45"/></g>
+    <g transform="translate(520,440) scale(0.5) rotate(-12)"><use href="#heartShape" xlink:href="#heartShape" opacity="0.35"/></g>
+    <g transform="translate(60,520) scale(0.6) rotate(10)"><use href="#heartShape" xlink:href="#heartShape" opacity="0.28"/></g>
+  </g>
+
+  <!-- Big glowing heart -->
+  <g transform="translate(400,235)">
+    <g transform="scale(3.4) translate(-50,-50)">
+      <use href="#heartShape" xlink:href="#heartShape" fill="#ff1b6b" filter="url(#blur14)" opacity="0.9"/>
+      <use href="#heartShape" xlink:href="#heartShape" fill="url(#heartGrad)"/>
+      <use href="#heartShape" xlink:href="#heartShape" fill="none" stroke="#ffd700" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- Shine on heart -->
+  <ellipse cx="355" cy="185" rx="34" ry="20" fill="#ffffff" opacity="0.45" filter="url(#blur6)" transform="rotate(-25 355 185)"/>
+
+  <!-- Text -->
+  <text x="400" y="500" text-anchor="middle" font-family="Tahoma, 'Segoe UI', Arial, sans-serif"
+        font-size="54" font-weight="bold" fill="#ffd700" stroke="#7a0f4d" stroke-width="1.5"
+        direction="rtl">أحبكِ يا قلبي</text>
+  <text x="400" y="552" text-anchor="middle" font-family="Tahoma, 'Segoe UI', Arial, sans-serif"
+        font-size="26" fill="#ffe6f0" direction="rtl">من اليوم إلى الأبد ❤</text>
+</svg>

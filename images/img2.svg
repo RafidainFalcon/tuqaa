@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#050a2a"/>
+      <stop offset="55%" stop-color="#1b2a6b"/>
+      <stop offset="100%" stop-color="#5b1b6b"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffe9a8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#ffe9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heartGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff1b6b"/>
+      <stop offset="100%" stop-color="#ff6b9d"/>
+    </linearGradient>
+    <filter id="soft8" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <path id="heartShape2" d="M50 88 L16.7 55.6 C7.2 46.1 7.2 30.9 16.7 21.4 C26.2 11.9 41.4 11.9 50.9 21.4 L50 22.3 L49.1 21.4 C58.6 11.9 73.8 11.9 83.3 21.4 C92.8 30.9 92.8 46.1 83.3 55.6 Z"/>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg2)"/>
+
+  <!-- Stars -->
+  <g fill="#ffffff">
+    <circle cx="60" cy="60" r="2.5" opacity="0.9"/>
+    <circle cx="140" cy="130" r="1.8" opacity="0.6"/>
+    <circle cx="220" cy="55" r="2.2" opacity="0.8"/>
+    <circle cx="300" cy="150" r="1.6" opacity="0.5"/>
+    <circle cx="380" cy="70" r="2.4" opacity="0.85"/>
+    <circle cx="470" cy="140" r="1.7" opacity="0.55"/>
+    <circle cx="560" cy="60" r="2.6" opacity="0.9"/>
+    <circle cx="640" cy="170" r="1.8" opacity="0.6"/>
+    <circle cx="720" cy="90" r="2.3" opacity="0.8"/>
+    <circle cx="760" cy="230" r="1.6" opacity="0.5"/>
+    <circle cx="90" cy="250" r="2" opacity="0.7"/>
+    <circle cx="180" cy="330" r="1.6" opacity="0.5"/>
+    <circle cx="700" cy="330" r="2" opacity="0.7"/>
+    <circle cx="620" cy="420" r="1.7" opacity="0.55"/>
+    <circle cx="120" cy="440" r="2.1" opacity="0.65"/>
+    <circle cx="420" cy="40" r="1.9" opacity="0.6"/>
+  </g>
+
+  <!-- Moon -->
+  <g transform="translate(670,120)">
+    <circle r="120" fill="url(#moonGlow)"/>
+    <path d="M 0 -55 A 55 55 0 1 0 0 55 A 42 42 0 1 1 0 -55 Z" fill="#ffe9a8"/>
+  </g>
+
+  <!-- Two interlocked hearts -->
+  <g transform="translate(310,300)">
+    <g transform="scale(2.1) translate(-50,-50) rotate(-12)">
+      <use href="#heartShape2" xlink:href="#heartShape2" fill="url(#heartGrad2)" filter="url(#soft8)" opacity="0.85"/>
+      <use href="#heartShape2" xlink:href="#heartShape2" fill="url(#heartGrad2)" stroke="#ffd700" stroke-width="3"/>
+    </g>
+  </g>
+  <g transform="translate(490,300)">
+    <g transform="scale(2.1) translate(-50,-50) rotate(12)">
+      <use href="#heartShape2" xlink:href="#heartShape2" fill="#ffd700" opacity="0.92"/>
+      <use href="#heartShape2" xlink:href="#heartShape2" fill="none" stroke="#ff1b6b" stroke-width="3"/>
+    </g>
+  </g>
+
+  <!-- Floating tiny hearts -->
+  <g fill="#ff8fb1">
+    <g transform="translate(150,180) scale(0.35)"><use href="#heartShape2" xlink:href="#heartShape2" opacity="0.7"/></g>
+    <g transform="translate(560,470) scale(0.4)"><use href="#heartShape2" xlink:href="#heartShape2" opacity="0.65"/></g>
+    <g transform="translate(60,340) scale(0.3)"><use href="#heartShape2" xlink:href="#heartShape2" opacity="0.6"/></g>
+    <g transform="translate(720,430) scale(0.32)"><use href="#heartShape2" xlink:href="#heartShape2" opacity="0.6"/></g>
+  </g>
+
+  <!-- Text -->
+  <text x="400" y="520" text-anchor="middle" font-family="Tahoma, 'Segoe UI', Arial, sans-serif"
+        font-size="50" font-weight="bold" fill="#ffd700" stroke="#050a2a" stroke-width="1.5"
+        direction="rtl">معكَ إلى الأبد</text>
+  <text x="400" y="566" text-anchor="middle" font-family="Tahoma, 'Segoe UI', Arial, sans-serif"
+        font-size="24" fill="#e8ecff" direction="rtl">كل ليلة أتمناك بجانبي ❤</text>
+</svg>
